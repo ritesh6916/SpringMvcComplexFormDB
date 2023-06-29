@@ -18,83 +18,98 @@
 </head>
 <body>
 	<div class="m-5">
-	<form >
-		<div class="form-row">
-			<div class="form-group col-md-6">
-				<label for="fname">First Name</label> <input type="text"
-					class="form-control" id="fname" placeholder="First Name">
+		<hr>
+		<h2 align="center">Welcome to Employee DataStore</h2>
+		<hr>
+		<form>
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="fname">First Name</label> <input type="text"
+						class="form-control" id="fname" placeholder="First Name">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="lname">Last Name</label> <input type="text"
+						class="form-control" id="lname" placeholder="Last Name">
+				</div>
 			</div>
-			<div class="form-group col-md-6">
-				<label for="lname">Last Name</label> <input type="text"
-					class="form-control" id="lname" placeholder="Last Name">
+			<div class="form-row">
+
+				<div class="form-group col-md-6">
+					<label for="fname">Phone Number</label> <input type="text"
+						class="form-control" id="fname" placeholder="+91-8002208399">
+				</div>
+
+				<div class="form-group col-md-3">
+					<label for="inputState">Gender</label> <select id="inputState"
+						class="form-control">
+						<option selected>Male</option>
+						<option>Female</option>
+					</select>
+				</div>
+				<div class="form-group col-md-3">
+					<label for="inputState">Date of Birth</label> <input type="date"
+						class="form-control" id="dob">
+				</div>
+
 			</div>
-		</div>
-		<div class="form-row">
-		
-			<div class="form-group col-md-6">
-				<label for="fname">Phone Number</label> 
-				<input type="text"
-					class="form-control" id="fname" placeholder="+91-8002208399">
+
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="inputEmail4">Email</label> <input type="email"
+						class="form-control" id="inputEmail4" placeholder="Email">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="inputPassword4">Password</label> <input type="password"
+						class="form-control" id="inputPassword4" placeholder="Password">
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col-md-4">
+					<label for="inputAddress">Address</label> <input type="text"
+						class="form-control" id="inputAddress" placeholder="1234 Main St">
+				</div>
+				<div class="form-group col-md-2">
+					<label for="inputZip">Zip</label> <input type="text"
+						class="form-control" id="inputZip">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="fname">Choose Photo</label> <input type="file"
+						class="form-control" id="fname">
+				</div>
+			</div>
+
+			<div class="form-row">
+				<div class="form-group col-md-3">
+					<label for="inputCity">City</label> <input type="text"
+						class="form-control" id="inputCity">
+				</div>
+				<div class="form-group col-md-3">
+					<label for="inputState">State</label> <select id="inputState"
+						class="form-control">
+						<option selected>Bihar</option>
+						<option>UP</option>
+						<option>MP</option>
+						<option>Jammu and Kamhmir</option>
+					</select>
+				</div>
+				<div class="form-group col-md-6">
+					<label for="fname">Upload Resume</label> <input type="file"
+						class="form-control" id="fname">
+				</div>
 			</div>
 			
-			<div class="form-group col-md-3">
-				<label for="inputState">Gender</label> 
-				<select id="inputState" class="form-control">
-					<option selected>Male</option>
-					<option>Female</option>
-				</select>
+			<div class="form-group" align="center">
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" id="gridCheck">
+					<label class="form-check-label" for="gridCheck"> Please
+						Accept the Terms & Conditions </label>
+				</div>
 			</div>
-			<div class="form-group col-md-3">
-				<label for="inputState">Date of Birth</label> 
-				<input type="date" class="form-control" id="dob">
+			<div align="center">
+				<button type="button" class="btn btn-outline-success">Submit</button>
+				<button type="reset" class="btn btn-outline-danger">Reset</button>
 			</div>
-			
-		</div>
-		
-		<div class="form-row">
-			<div class="form-group col-md-6">
-				<label for="inputEmail4">Email</label> <input type="email"
-					class="form-control" id="inputEmail4" placeholder="Email">
-			</div>
-			<div class="form-group col-md-6">
-				<label for="inputPassword4">Password</label> <input type="password"
-					class="form-control" id="inputPassword4" placeholder="Password">
-			</div>
-		</div>
-		<div class="form-group">
-			<label for="inputAddress">Address</label> <input type="text"
-				class="form-control" id="inputAddress" placeholder="1234 Main St">
-		</div>
-		<div class="form-row">
-			<div class="form-group col-md-6">
-				<label for="inputCity">City</label> <input type="text"
-					class="form-control" id="inputCity">
-			</div>
-			<div class="form-group col-md-4">
-				<label for="inputState">State</label> <select id="inputState"
-					class="form-control">
-					<option selected>Bihar</option>
-					<option>UP</option>
-					<option>MP</option>
-					<option>Jammu and Kamhmir</option>
-				</select>
-			</div>
-			<div class="form-group col-md-2">
-				<label for="inputZip">Zip</label> <input type="text"
-					class="form-control" id="inputZip">
-			</div>
-		</div>
-		<div class="form-group" align="center">
-			<div class="form-check">
-				<input class="form-check-input" type="checkbox" id="gridCheck">
-				<label class="form-check-label" for="gridCheck"> Please Accept the Terms & Conditions </label>
-			</div>
-		</div>
-		<div align="center">
-		<button type="button" class="btn btn-outline-success">Submit</button>
-		<button type="reset" class="btn btn-outline-danger">Reset</button>
-		</div>
-	</form>
+		</form>
 	</div>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
