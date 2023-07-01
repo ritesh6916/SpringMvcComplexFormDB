@@ -1,7 +1,8 @@
 package com.springmvc.form.model;
 
-import java.util.Arrays;
 import java.util.Date;
+
+import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
 public class FormModel {
 
@@ -15,10 +16,10 @@ public class FormModel {
 	private String txtpassword;
 	private String txtaddress;
 	private String txtpincode;
-	private byte[] image;
+	private CommonsMultipartFile image;
 	private String txtcity;
 	private String state;
-	private byte[] resume;
+	private CommonsMultipartFile resume;
 	private String ckbcondition;
 	
 	public String getCkbcondition() {
@@ -81,10 +82,10 @@ public class FormModel {
 	public void setTxtpincode(String txtpincode) {
 		this.txtpincode = txtpincode;
 	}
-	public byte[] getImage() {
+	public CommonsMultipartFile getImage() {
 		return image;
 	}
-	public void setImage(byte[] image) {
+	public void setImage(CommonsMultipartFile image) {
 		this.image = image;
 	}
 	public String getTxtcity() {
@@ -99,18 +100,18 @@ public class FormModel {
 	public void setState(String state) {
 		this.state = state;
 	}
-	public byte[] getResume() {
+	public CommonsMultipartFile getResume() {
 		return resume;
 	}
-	public void setResume(byte[] resume) {
+	public void setResume(CommonsMultipartFile resume) {
 		this.resume = resume;
 	}
 	@Override
 	public String toString() {
 		return "FormModel [txtfname=" + txtfname + ", txtlname=" + txtlname + ", txtphone=" + txtphone + ", gender="
 				+ gender + ", dob=" + dob + ", txtemail=" + txtemail + ", txtpassword=" + txtpassword + ", txtaddress="
-				+ txtaddress + ", txtpincode=" + txtpincode + ", image=" + Arrays.toString(image) + ", txtcity="
-				+ txtcity + ", state=" + state + ", resume=" + Arrays.toString(resume) + ", ckbcondition="
-				+ ckbcondition + "]";
+				+ txtaddress + ", txtpincode=" + txtpincode + ", image=" + image + ", txtcity=" + txtcity + ", state="
+				+ state + ", resume=" + resume + ", ckbcondition=" + ckbcondition + "]";
 	}
+	
 }
