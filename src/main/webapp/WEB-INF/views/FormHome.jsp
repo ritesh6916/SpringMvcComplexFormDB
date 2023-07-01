@@ -21,92 +21,93 @@
 		<hr>
 		<h2 align="center">Welcome to Employee DataStore</h2>
 		<hr>
-		<form>
+		<form action="processForm" method="post" enctype="multipart/form-data">
 			<div class="form-row">
 				<div class="form-group col-md-6">
 					<label for="fname">First Name</label> <input type="text"
-						class="form-control" id="fname" placeholder="First Name">
+						class="form-control" id="fname" placeholder="First Name" name="txtfname">
 				</div>
 				<div class="form-group col-md-6">
 					<label for="lname">Last Name</label> <input type="text"
-						class="form-control" id="lname" placeholder="Last Name">
+						class="form-control" id="lname" placeholder="Last Name" name="txtlname">
 				</div>
 			</div>
 			<div class="form-row">
 
 				<div class="form-group col-md-6">
 					<label for="fname">Phone Number</label> <input type="text"
-						class="form-control" id="fname" placeholder="+91-8002208399">
+						class="form-control" id="fname" placeholder="+91-8002208399" name="txtphone">
 				</div>
 
 				<div class="form-group col-md-3">
 					<label for="inputState">Gender</label> <select id="inputState"
-						class="form-control">
+						class="form-control" name="gender">
 						<option selected>Male</option>
 						<option>Female</option>
 					</select>
 				</div>
 				<div class="form-group col-md-3">
-					<label for="inputState">Date of Birth</label> <input type="date"
-						class="form-control" id="dob">
+					<label for="inputState">Date of Birth</label> <input type="text"
+						class="form-control" name="dob" placeholder="dd/MM/yyyy">
 				</div>
-
 			</div>
 
 			<div class="form-row">
 				<div class="form-group col-md-6">
 					<label for="inputEmail4">Email</label> <input type="email"
-						class="form-control" id="inputEmail4" placeholder="Email">
+						class="form-control" id="inputEmail4" placeholder="Email" name="txtemail">
 				</div>
 				<div class="form-group col-md-6">
-					<label for="inputPassword4">Password</label> <input type="password"
-						class="form-control" id="inputPassword4" placeholder="Password">
+					<label for="pass">Password</label> <input type="password"
+						class="form-control" id="pass" placeholder="Password" name="txtpassword">
 				</div>
 			</div>
+			
 			<div class="form-row">
 				<div class="form-group col-md-4">
 					<label for="inputAddress">Address</label> <input type="text"
-						class="form-control" id="inputAddress" placeholder="1234 Main St">
+						class="form-control" id="inputAddress" placeholder="1234 Main St" name="txtaddress">
 				</div>
 				<div class="form-group col-md-2">
 					<label for="inputZip">Zip</label> <input type="text"
-						class="form-control" id="inputZip">
+						class="form-control" id="inputZip" name="txtpincode">
 				</div>
 				<div class="form-group col-md-6">
 					<label for="fname">Choose Photo</label> <input type="file"
-						class="form-control" id="fname">
+						class="form-control" id="fname" name="image">
 				</div>
 			</div>
 
 			<div class="form-row">
 				<div class="form-group col-md-3">
 					<label for="inputCity">City</label> <input type="text"
-						class="form-control" id="inputCity">
+						class="form-control" id="inputCity" name="txtcity">
 				</div>
 				<div class="form-group col-md-3">
 					<label for="inputState">State</label> <select id="inputState"
-						class="form-control">
+						class="form-control" name="state">
 						<option selected>Bihar</option>
 						<option>UP</option>
 						<option>MP</option>
 						<option>Jammu and Kamhmir</option>
 					</select>
 				</div>
+				
 				<div class="form-group col-md-6">
 					<label for="fname">Upload Resume</label> <input type="file"
-						class="form-control" id="fname">
+						class="form-control" id="fname" name="resume">
 				</div>
 			</div>
 			
 			<div class="form-group" align="center">
 				<div class="form-check">
-					<input class="form-check-input" type="checkbox" id="gridCheck">
+					<input class="form-check-input" type="checkbox" id="gridCheck" name="ckbcondition">
 					<label class="form-check-label" for="gridCheck"> Please
 						Accept the Terms & Conditions </label>
 				</div>
 			</div>
 			<div align="center">
-				<button type="button" class="btn btn-outline-success">Submit</button>
+				<button type="submit" class="btn btn-outline-success">Submit</button>
 				<button type="reset" class="btn btn-outline-danger">Reset</button>
 			</div>
 		</form>
