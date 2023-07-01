@@ -9,15 +9,16 @@ public class FormModel {
 	private String txtlname;
 	private String txtphone;
 	private String gender;
+	//@DateTimeFormat(pattern = "dd-MM-yyy")
 	private Date dob;
 	private String txtemail;
 	private String txtpassword;
 	private String txtaddress;
 	private String txtpincode;
-	private Byte[] image;
+	private byte[] image;
 	private String txtcity;
 	private String state;
-	private Byte[] resume;
+	private byte[] resume;
 	private String ckbcondition;
 	
 	public String getCkbcondition() {
@@ -80,10 +81,10 @@ public class FormModel {
 	public void setTxtpincode(String txtpincode) {
 		this.txtpincode = txtpincode;
 	}
-	public Byte[] getImage() {
+	public byte[] getImage() {
 		return image;
 	}
-	public void setImage(Byte[] image) {
+	public void setImage(byte[] image) {
 		this.image = image;
 	}
 	public String getTxtcity() {
@@ -98,10 +99,10 @@ public class FormModel {
 	public void setState(String state) {
 		this.state = state;
 	}
-	public Byte[] getResume() {
+	public byte[] getResume() {
 		return resume;
 	}
-	public void setResume(Byte[] resume) {
+	public void setResume(byte[] resume) {
 		this.resume = resume;
 	}
 	@Override
