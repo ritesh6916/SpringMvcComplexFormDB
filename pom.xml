@@ -8,11 +8,9 @@
 	<name>SpringMvcComplexFormDB Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
-		
 		<!-- spring-webmvc 6 is compatable with Tomcat 10 - Jakarta API -->
 		<!-- spring-webmvc 5 and below  is compatable with Tomcat 9 and below  - javax.servlet API -->
 		<!-- spring-webmvc 6 doesn't have "CommonsMultipartResolver" so removed it also changed to Tomcat 9  -->
-		
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
@@ -28,6 +26,12 @@
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
 			<version>2.7</version>
+		</dependency>
+		<dependency>
+			<groupId>jstl</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.webjars</groupId>
