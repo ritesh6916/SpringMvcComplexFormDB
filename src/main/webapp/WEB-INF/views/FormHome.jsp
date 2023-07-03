@@ -48,7 +48,7 @@
 				</div>
 				<div class="form-group col-md-3">
 					<label for="inputState">Date of Birth</label> <input type="text"
-						class="form-control" name="dob" placeholder="dd/MM/yyyy">
+						class="form-control" name="dob" placeholder="MM/dd/yyyy">
 				</div>
 			</div>
 
@@ -66,7 +66,7 @@
 			<div class="form-row">
 				<div class="form-group col-md-4">
 					<label for="inputAddress">Address</label> <input type="text"
-						class="form-control" id="inputAddress" placeholder="1234 Main St" name="txtaddress">
+						class="form-control" id="inputAddress" placeholder="House-no, Vill," name="txtaddress">
 				</div>
 				<div class="form-group col-md-2">
 					<label for="inputZip">Zip</label> <input type="text"
