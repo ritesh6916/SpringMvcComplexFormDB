@@ -10,14 +10,16 @@
 		http://www.springframework.org/schema/util 
 		https://www.springframework.org/schema/util/spring-util.xsd
 		http://www.springframework.org/schema/mvc 
-		https://www.springframework.org/schema/mvc/spring-mvc.xsd" >
+		https://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
 	<context:annotation-config />
-	<context:component-scan base-package="com.springmvc.form" />
+	<context:component-scan
+		base-package="com.springmvc.form" />
 
 	<mvc:annotation-driven />
-	<mvc:resources location="/WEB-INF/resources/" mapping="/resources/**" />
-	
+	<mvc:resources location="/WEB-INF/resources/"
+		mapping="/resources/**" />
+
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/WEB-INF/views/" />
@@ -26,5 +28,16 @@
 
 	<bean id="multipartResolver"
 		class="org.springframework.web.multipart.commons.CommonsMultipartResolver" />
+
+	<bean id="DrivermanagerDS" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.cj.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/springjdbc" />
+		<property name="username" value="root" />
+		<property name="password" value="Root@123" />
+	</bean>
+
+	<bean id="template" class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="DrivermanagerDS" />	
+	</bean>
 
 </beans>
