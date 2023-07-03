@@ -34,11 +34,16 @@
 			<version>1.2</version>
 			<scope>provided</scope>
 		</dependency>-->
-		
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>5.2.4.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>com.mysql</groupId>
