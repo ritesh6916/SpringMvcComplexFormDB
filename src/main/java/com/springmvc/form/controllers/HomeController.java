@@ -30,6 +30,9 @@ public class HomeController {
 		String imagePath=s.getServletContext().getRealPath("/")+"WEB-INF"+File.separator+"resources"+File.separator + "images"+File.separator+formModel.getImage().getOriginalFilename();
 		String resumePath=s.getServletContext().getRealPath("/")+"WEB-INF"+File.separator+"resources"+File.separator + "images"+File.separator+formModel.getResume().getOriginalFilename();
 		
+		model.addAttribute("image", formModel.getImage().getOriginalFilename());
+		model.addAttribute("resume", formModel.getResume().getOriginalFilename());
+		
 		byte[] image=formModel.getImage().getBytes();
 		byte[] resume=formModel.getResume().getBytes();
 		try {
